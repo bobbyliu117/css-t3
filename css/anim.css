@@ -1,0 +1,13 @@
+
+.anim1 {
+  background-color: red;
+  width: 100px;
+  animation: xoxo 2s ease-in infinite alternate forwards;
+}
+
+@keyframes xoxo {
+  from {}
+  to {
+    width: 200px;
+  }
+}
