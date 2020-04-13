@@ -109,6 +109,12 @@ select {
 ```js
 let selectDom = document.getElementById('movie');
 selectDom.value; // 10, the selected option value
+// event
+selectDom.addEventListener('change', e=>{
+  // selected index
+  e.target.selectedIndex; // 0
+  e.target.value; // '10'
+});
 ```
 
 ### 透视效果
@@ -134,4 +140,20 @@ selectDom.value; // 10, the selected option value
 ```js
 let a = '2';
 typeof +a; // number, same as parseInt(a)
+```
+
+### NodeList
+```js
+const nodeList = document.querySelectorAll('.seat');
+// convert to iterable
+const nodeArray = [...nodeList].map(..);
+// indexOf(obj) -> -1 if not found
+nodeArray.indexOf(seat);
+```
+
+### LocalStorage
+Built-in browser
+```js
+localStorage.setItem('key1', JSON.stringify(array));
+const v1 = JSON.parse(localStorage.getItem('key1'));
 ```

@@ -11,6 +11,33 @@
   <link rel="stylesheet" href="css/page3.css">
 </head>
 <body>
+  <div id="page1" class="page">
+    <form id="form-sign-in" class="slide-in">
+      <h2 class="py-1">Sign up | 登记</h2>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input id="username" name="username" placeholder="Enter username">
+        <small>Error message</small>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" name="email" placeholder="Enter email">
+        <small>Error message</small>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" name="password" placeholder="Enter password">
+        <small>Error message</small>
+      </div>
+      <div class="form-group">
+        <label for="password2">Confirm Password</label>
+        <input id="password2" name="password2" placeholder="Enter password again">
+        <small>Error message</small>
+      </div>
+      <a class="navbtn" href="#page2">Submit ｜ 提交</a>
+    </form>
+  </div>
+
   <div id="page2" class="page">
     <div class="container">
       <div class="picker-group py-1">
@@ -75,7 +102,7 @@
             <div class="seat"></div>
             <div class="seat"></div>
             <div class="seat"></div>
-            <div class="seat"></div>
+            <div class="seat occupied"></div>
             <div class="seat"></div>
           </div>
         </div>
@@ -86,37 +113,15 @@
       </div>
     </div>
   </div>
-
-  <div id="page1" class="page">
-    <form id="form-sign-in" class="slide-in">
-      <h2 class="py-1">Sign up</h2>
-      <div class="form-group">
-        <label for="username">Username</label>
-        <input id="username" name="username" placeholder="Enter username">
-        <small>Error message</small>
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input id="email" name="email" placeholder="Enter email">
-        <small>Error message</small>
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input id="password" name="password" placeholder="Enter password">
-        <small>Error message</small>
-      </div>
-      <div class="form-group">
-        <label for="password2">Confirm Password</label>
-        <input id="password2" name="password2" placeholder="Enter password again">
-        <small>Error message</small>
-      </div>
-      <a class="navbtn" href="#page2">Submit</a>
-    </form>
-  </div>
   
   <div id="page3" class="page">
-    <a class="navbtn" href="#page2">Previous</a>
+    <img src="./images/sara.png" alt="sara">
+    <h1><span class="en">Thank you!</span></h1>
+    <h1></span><span class="zh">谢谢!</h1>
+    <h1><span class="jp">ありがと!</span></h1>
+    <a class="navbtn" href="#page1">Back | 返回</a>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
   <script src="./js/page2.js"></script>

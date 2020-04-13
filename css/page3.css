@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Long+Cang&display=swap');
+
+#page3 {
+  flex-direction: column;
+}
+
+.en {
+  color: #012768;
+  font-family: 'Homemade Apple', Arial, Helvetica, sans-serif;
+}
+
+.zh {
+  color: #EC2124;
+  font-family: 'Long Cang', Arial, Helvetica, sans-serif;
+}
+
+.jp {
+  color: #FDE8E9;
+}
+
+#page3 img {
+  max-width: 120px;
+  margin: 2rem;
+  border-radius: 50%;
+}
+
+#page3 .navbtn {
+  margin-top: 1rem;
+}
