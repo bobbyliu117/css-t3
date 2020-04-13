@@ -90,12 +90,6 @@ dom.className = 'class-a class-b';
 ```
 
 ### `<select>`
-<select name="movies" id="movies">
-  <option value="10">End Game ($10)</option>
-  <option value="12">GOT ($12)</option>
-  <option value="5">X-Ray ($5)</option>
-</select>
-
 ```html
 <select name="movies" id="movies">
   <option value="10">End Game ($10)</option>
