@@ -1,0 +1,65 @@
+#page2 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+#page2 .picker-group {
+  color: var(--c-second);
+}
+
+#page2 .picker-group select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding: 0.5rem;
+  outline: none;
+  min-width: 200px;
+}
+
+.instruction {
+  background-color: var(--c-overlay-l);
+  color: var(--c-second);
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  border-radius: 4px;
+}
+
+.seat {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--c-gray-d);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.seat.selected {
+  background-color: turquoise;
+}
+
+.seat.occupied {
+  background-color: white;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.theater {
+  perspective: 1000px;
+}
+
+.screen {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}

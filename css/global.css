@@ -1,0 +1,47 @@
+:root {
+  --c-prime: #C42035;
+  --c-second: #E8EDDF;
+  --c-blk: #2A2A2A;
+  --c-gray-d: #444451;
+  --c-overlay: #0C0A3E70;
+  --c-overlay-l: #A0A0A030;
+}
+
+/* * * * * * * * * *  - Reset - * * * * * * * * * */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {font-family: Arial, Helvetica, sans-serif;}
+body { overflow: hidden; }
+ul {list-style: none;}
+a {text-decoration: none;}
+
+/* * * * * * * * * *  - Style - * * * * * * * * * */
+
+.page {
+  height: 100vh;
+}
+
+#page1 { background-color: royalblue; }
+#page2 { background-color: #191919; }
+#page3 { background-color: turquoise; }
+
+.navbtn {
+  padding: 0.2rem 0.5rem;
+  display: inline-block;
+  background-color: var(--c-blk);
+  color: white;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* * * * * * * * * *  - Utils - * * * * * * * * * */
+
+.py-1 { padding: 0.5rem 0; }

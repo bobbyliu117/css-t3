@@ -1,13 +1,9 @@
 
-.anim1 {
-  background-color: red;
-  width: 100px;
-  animation: xoxo 2s ease-in infinite alternate forwards;
+.slide-in {
+  transform: translateX(1000px);
+  animation: slide-in 1s cubic-bezier(0.19, 1, 0.22, 1) 1 forwards;
 }
 
-@keyframes xoxo {
-  from {}
-  to {
-    width: 200px;
-  }
+@keyframes slide-in {
+  to { transform: translateX(0); }
 }

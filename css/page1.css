@@ -1,0 +1,46 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page1 form {
+  background-color: white;
+  padding: 2rem;
+  min-width: 24rem;
+  border-radius: 4px;
+}
+
+#page1 form .form-group input {
+  width: 100%;
+  padding: 0.5rem 0.2rem;
+  outline: none;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  margin: 0.2rem 0;
+}
+
+#page1 form .form-group small {
+  color: red;
+  display: none;
+}
+
+#page1 form .navbtn {
+  text-align: center;
+  display: block;
+  padding: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+#page1 form .form-group.success input {
+  border-color: greenyellow;
+}
+
+#page1 form .form-group.error input {
+  border-color: red;
+}
+
+#page1 form .form-group.error small {
+  display: block;
+}
+

@@ -60,3 +60,78 @@ transform: rotate(180deg);
 ```css
 body { overflow: hidden; }
 ```
+
+### 选出同时有多个css class的DOM
+```css
+.form-group.error input {}
+```
+
+### small
+```html
+<small>Error message</small>
+```
+
+### visibility
+`visible`, `hidden`
+```css
+visibility: hidden; // similar to `display: none;`
+```
+
+### JS Get parent DOM
+```js
+const parent = input.parentElement;
+```
+
+### JS modify css class
+```js
+dom.className = 'class-a class-b';
+```
+
+### `<select>`
+<select name="movies" id="movies">
+  <option value="10">End Game ($10)</option>
+  <option value="12">GOT ($12)</option>
+  <option value="5">X-Ray ($5)</option>
+</select>
+
+```html
+<select name="movies" id="movies">
+  <option value="10">End Game ($10)</option>
+```
+appearance -> 默认样式，需三个厂前后缀同时生效
+```css
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+```
+```js
+let selectDom = document.getElementById('movie');
+selectDom.value; // 10, the selected option value
+```
+
+### 透视效果
+```css
+.container {perspective: 1000px;}
+.screen {transform: rotateX(-45deg);}
+```
+
+### nth选择器
+选中每个div中第二个 `.seat`
+```css
+.seat:nth-of-type(2) {margin-right: 18px;}
+.seat:nth-last-of-type(2) {margin-left: 18px;}
+```
+
+### not选择器
+选中是`.seat` 但不是`.occupied`
+```css
+.seat:not(.occupied):hover {}
+```
+
+### JS parse string to int
+```js
+let a = '2';
+typeof +a; // number, same as parseInt(a)
+```

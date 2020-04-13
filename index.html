@@ -5,8 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Binary Kong | 码二猴</title>
   <link rel="stylesheet" href="css/anim.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/page1.css">
+  <link rel="stylesheet" href="css/page2.css">
+  <link rel="stylesheet" href="css/page3.css">
 </head>
 <body>
-  <div class="anim1">SS</div>
+  <div id="page2" class="page">
+    <div class="container">
+      <div class="picker-group py-1">
+        <span class="picker-label">Pick a movie: </span>
+        <select name="movies" id="movies">
+          <option value="10">End Game ($10)</option>
+          <option value="12">GOT ($12)</option>
+          <option value="5">X-Ray ($5)</option>
+        </select>
+      </div>
+      <ul class="instruction py-1">
+        <li>
+          <div class="seat"></div>
+          <small>N/A</small>
+        </li>
+        <li>
+          <div class="seat selected"></div>
+          <small>Selected</small>
+        </li>
+        <li>
+          <div class="seat occupied"></div>
+          <small>Occupied</small>
+        </li>
+      </ul>
+      <div class="theater py-1">
+        <div class="screen"></div>
+        <div class="seats py-1">
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a class="navbtn" href="#page1">Previous</a>
+        <a class="navbtn" href="#page3">Next</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="page1" class="page">
+    <form id="form-sign-in" class="slide-in">
+      <h2 class="py-1">Sign up</h2>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input id="username" name="username" placeholder="Enter username">
+        <small>Error message</small>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" name="email" placeholder="Enter email">
+        <small>Error message</small>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" name="password" placeholder="Enter password">
+        <small>Error message</small>
+      </div>
+      <div class="form-group">
+        <label for="password2">Confirm Password</label>
+        <input id="password2" name="password2" placeholder="Enter password again">
+        <small>Error message</small>
+      </div>
+      <a class="navbtn" href="#page2">Submit</a>
+    </form>
+  </div>
+  
+  <div id="page3" class="page">
+    <a class="navbtn" href="#page2">Previous</a>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/page2.js"></script>
 </body>
 </html>
