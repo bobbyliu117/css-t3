@@ -11,6 +11,12 @@
   border-radius: 4px;
 }
 
+@media (max-width: 600px) {
+  #page1 form {
+    min-width: 90%;
+  }
+}
+
 #page1 form .form-group input {
   width: 100%;
   padding: 0.5rem 0.2rem;
